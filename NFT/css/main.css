@@ -1,0 +1,80 @@
+body{
+    background-color:hsl(217, 54%, 11%) ;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding-top: 40px;
+    
+    
+  }
+  .container{
+    background-color: hsl(216, 50%, 16%);
+    box-shadow: 0 0px  80px hsl(215, 32%, 27%);
+    position: relative;
+    border-radius:20px ;
+    padding: 25px;
+    width: 250px;
+    
+    /* margin: 0 auto; */
+  }
+  .image{
+    background: url(../images/image-equilibrium.jpg)no-repeat center;
+    width: 100%;
+    height: 15rem;
+    background-size:cover;
+    z-index: 2;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .capa{
+    transition: all .5s;
+    width: 250px;
+    height: 15rem;
+    bottom: 262.2px;
+    z-index: 1;
+    position: absolute;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .view{
+    visibility: hidden;
+    transition:background .5s ;
+  }
+  div.capa:hover > img.view{
+    visibility: visible;
+  }
+  .capa:hover{
+    background-color: hsl(178, 100%, 50%,50%);
+
+  }
+  .price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer{
+    display: flex;
+    justify-content: space-around;
+  }
+  h1{
+    color: white;
+  }
+  p{
+    color: gray;
+  }
+  h2{
+    color: hsl(178, 100%, 50%);
+  }
+  h3{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: hsl(215, 51%, 70%);
+  }
+  .name{
+    color: white;
+  }
